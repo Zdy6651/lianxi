@@ -108,6 +108,20 @@ export const constantRoutes = [
         meta: { title: '测试', icon: 'people', affix: true }
       }
     ]
+  },
+  {
+    path: '/practice',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/test/practice/practice'),
+        name: 'test',
+        hidden: false,
+
+        meta: { title: '功能联系', icon: 'people', affix: true }
+      }
+    ]
   }
 ]
 
